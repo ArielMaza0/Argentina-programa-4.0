@@ -1,0 +1,285 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Inicio */
+.header{
+    height: 780px;
+    width: 100%;
+    background-image:url(image/fondo.jpg);
+    position: relative;
+}
+
+.navbar-container{
+    padding: 15px;
+}
+
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: #872f91f1;
+    border-radius: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.introduccion{
+    box-sizing: border-box;;
+    padding: 25px 45px 25px 45px ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.introduccion-container-text{
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+}
+
+.introduccion-text{
+    font-family: 'Kumbh Sans';
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.introduccion-text .nombre{
+    color:#fff;
+    font-size: 50px;
+    margin: 0;
+    line-height: 80%;
+    text-transform: uppercase;
+
+}
+.introduccion-text .soy{
+    color:#fff;
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.soySpan{
+    color: #871C93;
+}
+
+.introduccion-text .descripcion{
+    color:#fff;
+    font-size: 15px;
+    margin: 0;
+}
+
+.thumbnail{
+    display: flex;
+    flex:1;
+    width: 100%;
+    justify-content: center;
+    margin-top: -50%;
+}
+
+.thumbnail img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    border-top-left-radius:90%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    mix-blend-mode: lighten;
+}
+
+/* Sobre mí */
+.sobre-mi{
+    width: 100%;
+    height: 680px;
+    background-image: url(./image/fondo.jpg);
+}
+
+.sobre-mi-container{
+    height: 100%;
+    padding: 25px 45px 0px 45px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre-mi-text-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.sobre-mi-text{
+  font-family: 'Kumbh Sans';
+    max-width: 370px;
+    text-align: center;
+}
+
+.sobre-mi-text p{
+    font-size: 15px;
+}
+
+.sobre-mi-text h2{
+    color: #871C93;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sobre-mi-img{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    margin-top: -50%;
+}
+
+.sobre-mi-img img{
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    border-top-left-radius:40%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    mix-blend-mode: lighten;
+}
+
+/* Conocimientos */
+.conocimientos{
+    width: 100%;
+    height: auto;
+    background-image: url(./image/fondo.jpg);
+}
+
+.conocimientos-container{
+    padding: 25px 45px 100px 45px ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conocimientos-text{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex:1;
+}
+
+.conocimientos-text p{
+    color: #871C93;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+
+.conocimientos-text .conocimientos-img{
+    margin-top: 25px;
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    border-top-left-radius:40%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    mix-blend-mode: lighten;
+}
+
+.conocimientos-list{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+
+.item{
+    max-width: 460px;
+    border-bottom: 1px solid gray;
+}
+
+.item h4{
+    font-family: 'Kumbh Sans';
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.item p{
+    color: #fff;
+    font-size: medium;
+}
+
+
+/* Responsive */
+@media only screen and (min-width: 768px) {
+    .navbar{
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        position: fixed;
+        z-index: 10;
+        width: 600px;
+    }
+    .header{
+        height: 580px;
+        box-sizing: border-box;
+    }
+
+    .introduccion{
+        flex-direction: row;
+        text-align: start;    
+    }
+
+    .thumbnail{
+        margin-top: 0;
+    }
+    .conocimientos{
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+   .sobre-mi{
+    height: 590px;
+   }
+
+   .sobre-mi-img{
+    margin-top: 0;
+}
+
+    .conocimientos-container{
+        flex-direction: row;    
+    }
+
+    .sobre-mi-container{
+        flex-direction: row;
+    }
+    .sobre-mi-text{
+        text-align: start ;
+     }
+  }
